@@ -1,21 +1,22 @@
 package instituto.sistemainstituto.controller;
 
-import instituto.sistemainstituto.repository.UserRepository;
 import instituto.sistemainstituto.requests.user.UserPostRequestBody;
 import instituto.sistemainstituto.requests.user.UserPutRequestBody;
 import instituto.sistemainstituto.service.UserService;
 import instituto.sistemainstituto.util.DateUtil;
-import instituto.sistemainstituto.util.entity.UserEntity;
+import instituto.sistemainstituto.entity.UserEntity;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import instituto.sistemainstituto.repository.UserRepository;
 
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Optional;
+
 
 @RestController // faz com que o retorno dos dados sejam apenas strings
 @RequestMapping("users") // rota no nível da classe

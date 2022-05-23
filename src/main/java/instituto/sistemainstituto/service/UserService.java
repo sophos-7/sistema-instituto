@@ -1,13 +1,13 @@
 package instituto.sistemainstituto.service;
 
-import instituto.sistemainstituto.util.entity.UserEntity;
-import instituto.sistemainstituto.repository.UserRepository;
+import instituto.sistemainstituto.entity.UserEntity;
 import instituto.sistemainstituto.requests.user.UserPostRequestBody;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
+import instituto.sistemainstituto.repository.UserRepository;
 
 import java.util.List;
 
